@@ -1,0 +1,536 @@
+/*
+Theme Name: citymacaron
+Theme URI: http://underscores.me/
+Author: Dexter Tzu
+Author URI: http://www.citymacaron.ca
+Description: City Macaron
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: citymacaron
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+citymacaron is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url('images/masthead_bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 579px;
+  font-family: 'Montserrat';
+  top: 0 !important;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.logo {
+  background-image: url('images/logo.png');
+  width: 204px;
+  height: 44px;
+  margin-top: 15px;
+}
+
+.navigation {
+  border-top: solid 4px #5ec5c7;
+  width: 100%;
+  height: 80px;
+  background-color: #272626;
+  opacity: 0.90;
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+}
+
+nav {
+  margin-top: 25px;
+  color: white;
+}
+
+nav:active, nav:visited, nav:focus {
+  margin-top: 25px;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  color: #5ec5c7;
+}
+nav li a:hover {
+  background-color: #5ec5c7;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#mid-section {
+  height: 328px;
+  background: #46d1ff; /* Old browsers */
+  background: -moz-linear-gradient(top, #46d1ff 0%, #e5e5e5 68%, #e5e5e5 68%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #46d1ff 0%, #e5e5e5 68%, #e5e5e5 68%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #46d1ff 0%, #e5e5e5 68%, #e5e5e5 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46d1ff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+.masthead-text {
+  padding-top: 190px;
+  padding-left: 25px;
+}
+
+.masthead-text h1 {
+  color: #cccd7f;
+  text-transform: uppercase;
+}
+
+.masthead-text p {
+  color: #fff;
+  font-family: 'Open Sans';
+  text-transform: none;
+  display: block;
+}
+
+#mid-section ul li {
+  display: inline;
+}
+
+.mid-section-item {
+  text-align: center;
+  font-size: 11px;
+}
+
+.mid-section-item p {
+  margin-top: 15px;
+}
+
+
+.mid-section-image-1 {
+	background-image: url('images/mid-section-1.jpg');
+  margin-top: 70px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border: #fff 2px;
+  z-index: -999;
+}
+
+.mid-section-image-2 {
+	background-image: url('images/mid-section-2.jpg');
+  margin-top: 70px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border: #fff 2px;
+  z-index: -999;
+}
+
+.mid-section-image-3 {
+	background-image: url('images/mid-section-3.jpg');
+  margin-top: 70px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border: #fff 2px;
+  z-index: -999;
+}
+
+button {
+  text-align: center;
+}
+
+button.btn.btn-rounded {
+  border-radius: 50px;
+  background-color: #c62f46;
+  font-size: 14px;
+  color: #cccd7f;
+  width: 198px;
+  height: 51px;
+  text-align: center;
+}
+
+button.btn.btn-rounded:hover {
+  background-color: #ec1d3f;
+}
+
+footer {
+  height: 20%;
+  background-color: #cd2e45;
+  color: #fff;
+  display: block;
+}
+
+footer .logo {
+  margin-top: 45px;
+  font-size: 12px;
+  display: block;
+}
+
+.footer-phone {
+  display: block;
+  margin-top: 10px;
+}
+
+footer span {
+  margin-top: 25px;
+  font-size: 12px;
+}
+
+footer hr {
+  width: 62%;
+  text-align: left;
+  background-color: red;
+  float: left;
+}
+
+.footer-city {
+  display: block;
+  margin-top: 10px;
+}
+
+.footer-map {
+  background-image: url('images/map.png');
+  width: 142px;
+  height: 132px;
+  margin-top: 10px;
+  margin-left: 135px;
+}
+
+.footer-map-heading {
+  //float: right;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+.footer-map-heading p {
+
+}
+
+.footer-social {
+  margin-top: 85px;
+}
+
+.footer-social p {
+  margin-bottom: 15px;
+}
+
+.footer-copyright {
+  width: 230px;
+  height: 53px;
+  display: block;
+}
+
+.footer-social {
+  text-align: right;
+  height: 75px;
+  text-align: right;  
+}
+
+.footer-social ul {
+  display: inline;
+  text-align: center;
+  width: 50%;
+}
+
+.footer-social li {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 15px;
+}
+
+li.footer-social-facebook {
+  width: 35px;
+  height: 35px;
+  background-image: url('images/social-facebook.png');
+}
+
+li.footer-social-twitter {
+  width: 35px;
+  height: 35px;
+  background-image: url('images/social-twitter.png');
+}
+
+li.footer-social-instagram {
+  width: 35px;
+  height: 35px;
+  background-image: url('images/social-instagram.png');
+}
