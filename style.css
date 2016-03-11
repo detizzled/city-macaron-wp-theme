@@ -304,26 +304,26 @@ header#front_page {
   top: 0;
 }
 
-nav#front-page-nav {
+nav {
   margin-top: 25px;
   color: white;
 }
 
-nav#front-page-nav:active, nav:visited, nav:focus {
+nav:active, nav:visited, nav:focus {
   margin-top: 25px;
   color: white;
 }
 
-nav#front-page-nav ul {
+nav ul {
   list-style-type: none;
   float: right;
 }
 
-nav#front-page-nav li {
+nav li {
   display: inline;
 }
 
-nav#front-page-nav li a {
+nav li a {
   width: 80px;
   height: 30px;
   font-size: 12px;
@@ -334,12 +334,13 @@ nav#front-page-nav li a {
   font-weight: bold;
   color: #5ec5c7;
 }
-nav#front-page-nav li a:hover {
+nav li a:hover {
   background-color: #5ec5c7;
   border-radius: 50px;
   color: #fff;
   text-decoration: none;
 }
+
 
 #mid-section {
   height: 328px;
