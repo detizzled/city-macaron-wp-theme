@@ -304,26 +304,26 @@ header#front_page {
   top: 0;
 }
 
-nav {
+nav#front-page-nav {
   margin-top: 25px;
   color: white;
 }
 
-nav:active, nav:visited, nav:focus {
+nav#front-page-nav:active, nav:visited, nav:focus {
   margin-top: 25px;
   color: white;
 }
 
-nav ul {
+nav#front-page-nav ul {
   list-style-type: none;
   float: right;
 }
 
-nav li {
+nav#front-page-nav li {
   display: inline;
 }
 
-nav li a {
+nav#front-page-nav li a {
   width: 80px;
   height: 30px;
   font-size: 12px;
@@ -334,13 +334,12 @@ nav li a {
   font-weight: bold;
   color: #5ec5c7;
 }
-nav li a:hover {
+nav#front-page-nav li a:hover {
   background-color: #5ec5c7;
   border-radius: 50px;
   color: #fff;
   text-decoration: none;
 }
-
 
 #mid-section {
   height: 328px;
@@ -536,7 +535,7 @@ li.footer-social-instagram {
   background-image: url('images/social-instagram.png');
 }
 
-ul#menu-primary-menu-links {
+ul#menu-main-menu {
   font-family: 'Montserrat';
   list-style-type: none;
   float: right;
@@ -544,11 +543,11 @@ ul#menu-primary-menu-links {
   transform: translateY(130%);
 }
 
-#menu-primary-menu-links li {
+#menu-main-menu li {
   display: inline;
 }
 
-#menu-primary-menu-links li a {
+#menu-main-menu li a {
   width: 80px;
   height: 30px;
   font-size: 12px;
@@ -559,7 +558,7 @@ ul#menu-primary-menu-links {
   font-weight: bold;
   color: #5ec5c7;
 }
-#menu-primary-menu-links li a:hover {
+#menu-main-menu li a:hover {
   background-color: #5ec5c7;
   border-radius: 50px;
   color: #fff;
