@@ -29,7 +29,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-3">
-            <a href="#">
+            <a href="<?php echo get_option('home'); ?>">
               <div class="logo"></div>
             </a>
           </div>
@@ -51,6 +51,4 @@
 
 <?php wp_head(); ?>
 <div id="page" class="site">
-
-
   <div id="content" class="site-content">
