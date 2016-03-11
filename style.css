@@ -535,7 +535,7 @@ li.footer-social-instagram {
   background-image: url('images/social-instagram.png');
 }
 
-ul#menu-main-menu {
+#menu-main-menu {
   font-family: 'Montserrat';
   list-style-type: none;
   float: right;
@@ -567,4 +567,18 @@ ul#menu-main-menu {
 
 #primary {
   margin-top: 100px;
+}
+
+.entry-footer {
+  width: 100%;
+  background-color: blue;
+}
+
+
+.comments-link {
+  margin-right: 25px;
+}
+
+.single {
+  margin-top: 150px;
 }

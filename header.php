@@ -50,5 +50,5 @@
   </header>
 
 <?php wp_head(); ?>
-<div id="page" class="site" style="margin-top: 100px;">
+<div id="page" class="site">
   <div id="content" class="site-content">
