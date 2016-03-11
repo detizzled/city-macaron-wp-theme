@@ -25,7 +25,7 @@
 </head>
 <body <?php body_class(); ?>>
   <header>
-    <div class="navigation">
+    <div class="nav">
       <div class="container">
         <div class="row">
           <div class="col-xs-3">
@@ -34,7 +34,7 @@
             </a>
           </div>
           <div class="col-xs-9">
-            <div class="nav" id="front-page-nav">
+            <nav>
               <?php 
                 $args = array(
                     'theme_location' => 'primary'
@@ -42,7 +42,7 @@
               ?>
 
               <?php wp_nav_menu( $args ); ?>
-            </div>
+            </nav>
           </div>
         </div>
       </div>

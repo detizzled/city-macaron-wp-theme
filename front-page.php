@@ -12,7 +12,7 @@
 </head>
 <body>
   <header id="front_page">
-    <div class="navigation">
+    <div class="nav">
       <div class="container">
         <div class="row">
           <div class="col-xs-3">

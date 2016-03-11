@@ -271,7 +271,7 @@ body {
   margin: 0;
   padding: 0;
 }
-header#front_page {
+#front_page {
   background-image: url('images/masthead_bg.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -292,7 +292,7 @@ header#front_page {
   margin-top: 15px;
 }
 
-.navigation {
+.nav {
   border-top: solid 4px #5ec5c7;
   width: 100%;
   height: 80px;
