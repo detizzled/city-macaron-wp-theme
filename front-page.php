@@ -11,7 +11,7 @@
 
 </head>
 <body>
-  <header>
+  <header id="front_page">
     <div class="navigation">
       <div class="container">
         <div class="row">
@@ -25,8 +25,7 @@
               <?php 
                 $args = array(
                     'theme_location' => 'primary'
-
-                  )
+                )
               ?>
 
               <?php wp_nav_menu( $args ); ?>
