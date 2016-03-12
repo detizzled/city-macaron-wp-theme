@@ -156,3 +156,5 @@ require get_template_directory() . '/inc/jetpack.php';
 register_nav_menus(array(
 		'primary' => __( 'Main menu'),
 ));
+
+?>

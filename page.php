@@ -13,44 +13,48 @@
  */
 
 get_header(); ?>
-  <div class="container" style="margin-top: 50px;">
+  <div class="container" style='margin-top: 50px'>
   	<div class="row">
   		<div class="col-xs-9">
-		    <div id="primary" class="content-area">
-		      <main id="main" class="site-main" role="main">
-		        <?php
-		        if ( is_page( 'About' ) ) :
-		            while ( have_posts() ) : the_post();
+        <div class="well">
+  		    <div id="primary" class="content-area">
+  		      <main id="main" class="site-main" role="main">
+  		        <?php
+  		        if ( is_page( 'About' ) ) :
+  		            while ( have_posts() ) : the_post();
 
-		              get_template_part( 'template-parts/content', 'page' );
+  		              get_template_part( 'template-parts/content', 'page' );
 
-		              // If comments are open or we have at least one comment, load up the comment template.
-		              if ( comments_open() || get_comments_number() ) :
-		                comments_template();
-		              endif;
+  		              // If comments are open or we have at least one comment, load up the comment template.
+  		              if ( comments_open() || get_comments_number() ) :
+  		                comments_template();
+  		              endif;
 
-		            endwhile; // End of the loop.     
+  		            endwhile; // End of the loop.     
 
-		        elseif ( is_page( 'Blog' ) ):
-		            query_posts('posts_per_page=5&post_type=post');
-		            while ( have_posts() ) : the_post();
+  		        elseif ( is_page( 'Blog' ) ):
+  		            query_posts('posts_per_page=5&post_type=post');
+  		            while ( have_posts() ) : the_post();
 
-		              get_template_part( 'template-parts/content', 'page' );
+  		              get_template_part( 'template-parts/content', 'page' );
 
-		              // If comments are open or we have at least one comment, load up the comment template.
-		              if ( comments_open() || get_comments_number() ) :
-		                comments_template();
-		              endif;
+  		              // If comments are open or we have at least one comment, load up the comment template.
+  		              if ( comments_open() || get_comments_number() ) :
+  		                comments_template();
+  		              endif;
 
-		            endwhile; // End of the loop.          
-		        endif;
-		        ?>        		     
-		      </main><!-- #main -->
-		    </div><!-- #primary -->
+  		            endwhile; // End of the loop.          
+  		        endif;
+  		        ?>        		     
+  		      </main><!-- #main -->
+  		    </div><!-- #primary -->
+        </div>
     	</div>
 
     	<div class="col-xs-3">
-    		<?php get_sidebar(); ?>
+        <div class="well">
+    		  <?php get_sidebar(); ?>
+        </div>
     	</div>
     </div>
   </div>

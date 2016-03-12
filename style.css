@@ -270,7 +270,13 @@ th {
 body {
   margin: 0;
   padding: 0;
+  background: #e5e5e5; /* Old browsers */
+  background: -moz-linear-gradient(top, #e5e5e5 0%, #46d1ff 68%, #46d1ff 68%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e5e5e5 0%, #46d1ff 68%, #46d1ff 68%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e5e5e5 0%, #46d1ff 68%, #46d1ff 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#46d1ff',GradientType=0 ); /* IE6-9 */
 }
+
 #front_page {
   background-image: url('images/masthead_bg.jpg');
   -webkit-background-size: cover;
@@ -304,26 +310,25 @@ body {
   top: 0;
 }
 
-nav#front-page-nav {
+#front-page-nav {
   margin-top: 25px;
   color: white;
 }
 
-nav#front-page-nav:active, nav:visited, nav:focus {
+#front-page-nav:active, nav:visited, nav:focus {
   margin-top: 25px;
   color: white;
 }
 
-nav#front-page-nav ul {
+#front-page-nav ul {
   list-style-type: none;
   float: right;
 }
 
-nav#front-page-nav li {
+#front-page-nav li {
   display: inline;
 }
-
-nav#front-page-nav li a {
+#front-page-nav li a {
   width: 80px;
   height: 30px;
   font-size: 12px;
@@ -334,7 +339,7 @@ nav#front-page-nav li a {
   font-weight: bold;
   color: #5ec5c7;
 }
-nav#front-page-nav li a:hover {
+#front-page-nav li a:hover {
   background-color: #5ec5c7;
   border-radius: 50px;
   color: #fff;
@@ -455,7 +460,6 @@ footer span {
 footer hr {
   width: 62%;
   text-align: left;
-  background-color: red;
   float: left;
 }
 
@@ -566,12 +570,13 @@ li.footer-social-instagram {
 }
 
 #primary {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .entry-footer {
   width: 100%;
-  background-color: blue;
+  background-color: #dfdfdf;
+  padding: 5px 15px;
 }
 
 
@@ -580,5 +585,10 @@ li.footer-social-instagram {
 }
 
 .single {
-  margin-top: 150px;
+  margin-top: 50px;
+}
+
+.well {
+  margin-top: 50px;
+  outline: none;
 }
