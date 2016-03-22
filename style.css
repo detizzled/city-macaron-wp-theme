@@ -277,29 +277,6 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#46d1ff',GradientType=0 ); /* IE6-9 */
 }
 
-#front_page {
-  background-image: url('images/masthead_bg.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  //background-size: cover;
-  background-size: 100% 100%;
-  background-image: no-repeat;
-  width: 100%;
-  height: 579px;
-  font-family: 'Montserrat';
-  top: 0 !important;
-  display: inline-block;
-  margin-top: 5px;
-}
-
-.logo {
-  background-image: url('images/logo.png');
-  width: 204px;
-  height: 44px;
-  margin-top: 15px;
-}
-
 .nav {
   border-top: solid 4px #5ec5c7;
   width: 100%;
@@ -390,36 +367,6 @@ body {
 }
 
 
-.mid-section-image-1 {
-	background-image: url('images/mid-section-1.jpg');
-  margin-top: 70px;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  border: #fff 2px;
-  z-index: -999;
-}
-
-.mid-section-image-2 {
-	background-image: url('images/mid-section-2.jpg');
-  margin-top: 70px;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  border: #fff 2px;
-  z-index: -999;
-}
-
-.mid-section-image-3 {
-	background-image: url('images/mid-section-3.jpg');
-  margin-top: 70px;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  border: #fff 2px;
-  z-index: -999;
-}
-
 button {
   text-align: center;
 }
@@ -475,13 +422,6 @@ footer hr {
   margin-top: 10px;
 }
 
-.footer-map {
-  background-image: url('images/map.png');
-  width: 142px;
-  height: 132px;
-  margin-top: 10px;
-  margin-left: 135px;
-}
 
 .footer-map-heading {
   //float: right;
@@ -526,24 +466,6 @@ footer hr {
   display: inline-block;
   text-align: center;
   margin: 0 15px;
-}
-
-li.footer-social-facebook {
-  width: 35px;
-  height: 35px;
-  background-image: url('images/social-facebook.png');
-}
-
-li.footer-social-twitter {
-  width: 35px;
-  height: 35px;
-  background-image: url('images/social-twitter.png');
-}
-
-li.footer-social-instagram {
-  width: 35px;
-  height: 35px;
-  background-image: url('images/social-instagram.png');
 }
 
 #menu-main-menu {
@@ -668,11 +590,11 @@ li.footer-social-instagram {
   background-color: #ec1d3f;
 }
 
-ul {
+ul#menu-main-menu-1 {
   margin: 0;
 }
 
-li {
+ul#menu-main-menu-1 li {
   margin-left: -15px;
 }
 

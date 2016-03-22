@@ -31,7 +31,7 @@
                 <nav>
                   <?php 
                     $args = array(
-                        'theme_location' => 'primary',
+                        'theme_location' => 'primary'
                     )
                   ?>
 
@@ -49,9 +49,9 @@
     </div>
 
     <div class="container masthead-text text-center">
-      <h1 class="text-left">Simply Delicious</h1>
-      <p class="text-left">Coming soon!</p>
-      <button class='btn btn-rounded'> Read more </button>
+      <h1 class="text-left"><?php echo get_theme_mod( 'masthead_primary_heading_text' ); ?></h1>
+      <p class="text-left"><?php echo get_theme_mod( 'masthead_secondary_text' ); ?></p>
+      <a href="<?php echo get_theme_mod( 'readmore_url' ); ?>"><button class='btn btn-rounded'>Read more</button></a>
     </div>
   </header>
 
@@ -60,26 +60,23 @@
       <div class="row" style="clear: both">
         <div class="col-xs-12 col-md-4 mid-section-item">
           <img class="mid-section-image-1" /><br />
-          <p>Lorem Ipsum is simply Korem<br />
-          lorem ipsum lorem ipsum</p>
+          <p><?php echo get_theme_mod( 'frontpage_midsection_image1_text' ); ?></p>
         </div>
         <div class="col-xs-12 col-md-4 mid-section-item">
           <img class="mid-section-image-2" /><br />
-          <p>Lorem Ipsum is simply Korem<br />
-          lorem ipsum lorem ipsum</p>
+          <p><?php echo get_theme_mod( 'frontpage_midsection_image2_text' ); ?></p>
         </div>
         <div class="col-xs-12 col-md-4 mid-section-item">
           <img class="mid-section-image-3" /><br />
-          <p>Lorem Ipsum is simply Korem<br />
-          lorem ipsum lorem ipsum</p>
+          <p><?php echo get_theme_mod( 'frontpage_midsection_image3_text' ); ?></p>
         </div>
       </div>
     </div>
   </div>
+<?php wp_head(); ?>
 
 
 <?php get_footer(); ?>
-
 
 <?php wp_footer(); ?>  
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
