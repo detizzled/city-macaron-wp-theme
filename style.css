@@ -282,7 +282,9 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  //background-size: cover;
+  background-size: 100% 100%;
+  background-image: no-repeat;
   width: 100%;
   height: 579px;
   font-family: 'Montserrat';
@@ -347,12 +349,14 @@ body {
 }
 
 #mid-section {
-  height: 328px;
+  height: 100%;
+  min-height: 328px;
   background: #46d1ff; /* Old browsers */
   background: -moz-linear-gradient(top, #46d1ff 0%, #e5e5e5 68%, #e5e5e5 68%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #46d1ff 0%, #e5e5e5 68%, #e5e5e5 68%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #46d1ff 0%, #e5e5e5 68%, #e5e5e5 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46d1ff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+  padding-bottom: 25px;
 }
 
 .masthead-text {
@@ -428,10 +432,12 @@ button.btn.btn-rounded {
   width: 198px;
   height: 51px;
   text-align: center;
+  outline: none; 
 }
 
 button.btn.btn-rounded:hover {
   background-color: #ec1d3f;
+  outline: none;   
 }
 
 footer {
@@ -439,6 +445,7 @@ footer {
   background-color: #cd2e45;
   color: #fff;
   display: block;
+  max-height: 245px;
 }
 
 footer .logo {
@@ -589,6 +596,193 @@ li.footer-social-instagram {
 }
 
 .well {
+  font-family: 'Open Sans';
+  padding: 30px;
   margin-top: 50px;
   outline: none;
+}
+
+.comment-meta {
+  padding: 20px;
+  background-color: #dfdfdf;
+}
+
+.widget-title {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.search-field {
+  padding: 8px 15px;
+  border-radius: 15px;
+  border: none;
+  width: 80%;
+  height: 18px;
+  font-size: 11px;
+  outline: none; 
+  margin-bottom: 5px;
+}
+
+.search-field:active, .search-field:focus {
+  outline: none;
+}
+
+.search-submit {
+  border-radius: 50px;
+  border: 0;
+  background-color: #c62f46;
+  font-size: 14px;
+  color: #cccd7f;
+  width: 70px;
+  height: 28px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-right: 0;
+  font-size: 11px;
+  outline: none;
+}
+
+.search-submit:hover {
+  background-color: #ec1d3f;
+}
+
+.submit {
+  border-radius: 50px;
+  border: 0;
+  background-color: #c62f46;
+  font-size: 14px;
+  color: #cccd7f;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 10px;
+  outline: none;
+}
+
+.submit:hover {
+  background-color: #ec1d3f;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  margin-left: -15px;
+}
+
+p.comment-form-comment {
+  clear: both;
+}
+
+textarea#comment {
+  display: block;
+  clear: both;
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  max-width: 350px;
+}
+
+.cat-links {
+  margin-right: 25px;
+}
+
+#wpstats {
+  display: none;
+}
+
+.navbar-default {
+  border-bottom: 0;
+}
+
+.navbar-toggle {
+  margin-top: 25px;
+  background-color: #5ec5c7;
+  transform: translateY(-10%);  
+  border: none;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #cd2e45 !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-collapse {
+  border-top: 0;
+  height: 75px;
+  width: 100%;
+  color: #fff;
+  float: left;
+  top: 25px;
+  text-align: left;
+}
+
+.screen-reader-text {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+
+.collapse.in {
+  display: block;
+}
+
+ul#menu-main-menu-1 {
+  margin: 0;
+  padding: 0;
+  //background-color: red;
+  padding-bottom: 25px;
+  color: orange;
+}
+
+#expanded-responsive-nav-menu {
+  width: 100%;
+  height: 100%;
+  background-color: #272626;
+  margin: 0;
+  padding-top: 25px;
+  font-family: 'Montserrat';
+}
+
+#expanded-responsive-nav-menu .menu-main-menu-container {
+  margin: 0;
+  padding: 0;
+}
+
+.expanded-responsive-nav-menu {
+  width: 100%;
+  //background-color: orange;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.expanded-responsive-nav-menu li {
+  clear: both;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style: none;  
+  color: #5ec5c7;
+}
+.expanded-responsive-nav-menu li:hover {
+  color: white;
+  background-color: #5ec5c7;
+  width: 110%;
+}
+
+.expanded-responsive-nav-menu a {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 110%;
+  padding-left: 10%;
+  text-decoration: none;
+
 }

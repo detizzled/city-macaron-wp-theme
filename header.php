@@ -25,26 +25,39 @@
 </head>
 <body <?php body_class(); ?>>
   <header>
-    <div class="nav">
+    <div class="nav navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
-        <div class="row">
-          <div class="col-xs-3">
-            <a href="<?php echo get_option('home'); ?>">
-              <div class="logo"></div>
-            </a>
-          </div>
-          <div class="col-xs-9">
-            <nav>
-              <?php 
-                $args = array(
-                    'theme_location' => 'primary'
-                )
-              ?>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <div class="row">
+            <div class="col-xs-3">
+              <a href="<?php get_site_url(); ?>">
+                <div class="logo"></div>
+              </a>
+            </div>
+            <div class="col-xs-9">
+              <div class="navbar-collapse collapse hidden-xs hidden-sm">
+                <nav>
+                  <?php 
+                    $args = array(
+                        'theme_location' => 'primary',
+                    )
+                  ?>
 
-              <?php wp_nav_menu( $args ); ?>
-            </nav>
+                  <?php wp_nav_menu( $args ); ?>
+                </nav>              
+              </div>              
+            </div>
+
+            <div id="expanded-responsive-nav-menu" class="hidden-sm hidden-md hidden-lg hidde-xl" style="display: none">
+              <?php $res_args = array('theme_location' => 'primary', 'menu_class' => 'expanded-responsive-nav-menu') ?>
+              <?php wp_nav_menu( $res_args ); ?>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </header>

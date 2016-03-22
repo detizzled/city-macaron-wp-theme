@@ -17,17 +17,17 @@ get_header(); ?>
   <div id="mid-section">
     <div class="container">
       <div class="row">
-        <div class="col-xs-4 mid-section-item">
+        <div class="col-xs-12 col-md-4 mid-section-item">
           <img src="images/mid-section-1.jpg" class="mid-section-image-1" /><br />
           <p>Lorem Ipsum is simply Korem<br />
           lorem ipsum lorem ipsum</p>
         </div>
-        <div class="col-xs-4 mid-section-item">
+        <div class="col-xs-12 col-md-4 mid-section-item">
           <img src="images/mid-section-2.jpg" class="mid-section-image-2" /><br />
           <p>Lorem Ipsum is simply Korem<br />
           lorem ipsum lorem ipsum</p>
         </div>
-        <div class="col-xs-4 mid-section-item">
+        <div class="col-xs-12 col-md-4 mid-section-item">
           <img class="mid-section-image-3" /><br />
           <p>Lorem Ipsum is simply Korem<br />
           lorem ipsum lorem ipsum</p>
@@ -72,7 +72,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <?php
 get_sidebar();
 get_footer();
